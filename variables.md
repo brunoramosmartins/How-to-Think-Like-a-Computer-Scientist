@@ -13,4 +13,10 @@ class Hora
   
   def tempo(self, tempo):
     
-    if tempo % 12 
+    r = tempo % 12
+    p = tempo // 12
+    
+    if p % 2 == 0:
+      # A parâmetro período não sel altera
+    else:
+      # O parâmetro período se altera.
