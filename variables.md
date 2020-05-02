@@ -6,19 +6,13 @@ class Hora
 # AM: Ante Meridiem (antes do meio-dia)
 # PM: Post Meridiem (depois do meio-dia)
 
-  def __init__(self, hora, periodo):
+  def __init__(self, hora, minutos = 0, segundos = 0):
 
     self.hora = hora
-    self.periodo = periodo
+    self.minutos = minutos
+    self.segundos = segundos
 
-  def tempo(self, tempo):
+  def soma_horas(h1, h2):
 
-    r = tempo % 12
-    p = tempo // 12
-
-    if p % 2 == 0:
-      # A parâmetro período não sel altera
-    else:
-      # O parâmetro período se altera.
-
-    Teste de github 
+  def soma_tempo(self, h):
+    
