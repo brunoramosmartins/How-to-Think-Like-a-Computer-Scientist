@@ -24,3 +24,11 @@ def main ():
         dia_semana = input("Qual dia da semana começa suas férias? ")
 
     dias_ferias = int(input("Quantos dias você ficará de férias? "))
+    for i in range(len(semana)):
+        if dia_semana.lower() == semana[i]:
+            dias_ferias += i
+    print ("Você voltará ", semana[dias_ferias % 7])
+
+main ()
+
+# Escrever um teste
