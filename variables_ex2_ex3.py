@@ -34,6 +34,7 @@ def main ():
     tempo_alarme.hora = int(input("Digite o tempo do alarme: "))
 
     hora.alarme(tempo_alarme)
+    print hora
 
 main ()
 
