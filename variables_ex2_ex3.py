@@ -1,7 +1,7 @@
 # Exercícios
 # Ex2 e Ex3: Definição de hora.
 
-class Hora
+class Hora:
 
 # AM: Ante Meridiem (antes do meio-dia)
 # PM: Post Meridiem (depois do meio-dia)
@@ -34,7 +34,7 @@ def main ():
     tempo_alarme.hora = int(input("Digite o tempo do alarme: "))
 
     hora.alarme(tempo_alarme)
-    print hora
+    print (hora)
 
 main ()
 
