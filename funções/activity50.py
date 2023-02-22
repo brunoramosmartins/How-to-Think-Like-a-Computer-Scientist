@@ -15,9 +15,9 @@ wn.bgcolor('lightgreen')
 alex = turtle.Turtle()
 for i in range(5):
     desenhaEstrela(alex, 100, 5)
-    alex.penup()
+    # alex.penup()
     alex.forward(350)
     alex.right(144)
-    alex.pendown()
+    # alex.pendown()
 
 wn.exitonclick()
