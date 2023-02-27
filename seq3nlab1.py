@@ -6,13 +6,14 @@ def seq3np1(n):
 
     cont = 0
     while n != 1:
-        print(n)
+        
         if n % 2 == 0:
             n = n // 2
         else:
             n = n * 3 + 1
         cont += 1
-    print(n)
-    print(cont)
+    print('O codigo tever ', cont, ' interacoes.')
 
-seq3np1(3)
+for start in range(1, 51):
+    print('Para ', start, ' temos')
+    seq3np1(start)
