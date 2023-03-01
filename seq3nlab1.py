@@ -1,3 +1,6 @@
+import turtle
+from plotbar import desenhaBarra
+
 def seq3np1(n):
     """
     Print the 3n + 1 sequence from n, terminating when it reaches 1.
@@ -12,8 +15,15 @@ def seq3np1(n):
         else:
             n = n * 3 + 1
         cont += 1
-    print('O codigo tever', cont, 'interacoes.')
+    return(cont)
 
 for start in range(1, 51):
-    print('Para n igual a', start, 'temos:')
-    seq3np1(start)
+    desenhaBarra(alex, seq3np1(start))
+
+wn = turtle.Screen()
+wn.bgcolor('lightgreen')
+wn.setworldcoordinates(-10, -10, 40 * 50 + 10, 110)
+
+alex = turtle.Turtle()
+
+wn.exitonclick()
