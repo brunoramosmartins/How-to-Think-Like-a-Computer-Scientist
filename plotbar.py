@@ -9,7 +9,7 @@ def desenhaBarra(t, altura):
     t.forward(altura)
     t.write(' ' + str(altura))
     t.right(90)
-    t.forward(40)
+    t.forward(5)
     t.right(90)
     t.forward(altura)
     t.left(90)

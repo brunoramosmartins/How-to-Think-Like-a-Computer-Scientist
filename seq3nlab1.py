@@ -1,6 +1,8 @@
 import turtle
 from plotbar import desenhaBarra
 
+alex = turtle.Turtle()
+
 def seq3np1(n):
     """
     Print the 3n + 1 sequence from n, terminating when it reaches 1.
@@ -17,13 +19,18 @@ def seq3np1(n):
         cont += 1
     return(cont)
 
+lista = []
 for start in range(1, 51):
-    desenhaBarra(alex, seq3np1(start))
+    lista.append(seq3np1)
+
+for valor in lista:
+    desenhaBarra(alex, valor)
+
+alturamax = max(lista)
+numbarras = len(lista)
+moldura = 10
 
 wn = turtle.Screen()
 wn.bgcolor('lightgreen')
-wn.setworldcoordinates(-10, -10, 40 * 50 + 10, 110)
-
-alex = turtle.Turtle()
-
+wn.setworldcoordinates(0 - moldura, 0 - moldura, 40 * numbarras + moldura, alturamax + moldura)
 wn.exitonclick()
